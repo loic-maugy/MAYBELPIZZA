@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="color-scheme" content="only light">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maybelpizza – Pizzeria Artisanale · Draguignan</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Raleway:wght@300;400;500;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
@@ -844,18 +845,10 @@ footer {
   .footer-inner { flex-direction:column; text-align:center; }
 }
 
-/* Correction couleur écrans AMOLED Samsung */
-@media screen and (max-width: 768px) {
-  :root {
-    --dark: #D4681A;
-    --dark2: #B85518;
-    --charcoal: #E07830;
-  }
-  body { background-color: #D4681A !important; }
-  section { background-color: #D4681A !important; }
-  .hero-bg { background: linear-gradient(160deg, #D4681A 0%, #B85518 50%, #D4681A 100%) !important; }
-  nav { background: rgba(212,104,26,0.97) !important; }
-}
+
+
+/* Forcer le mode clair - ignorer le mode sombre du navigateur */
+:root { color-scheme: only light; }
 </style>
 </head>
 <body>
