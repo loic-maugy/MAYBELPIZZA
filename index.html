@@ -843,6 +843,17 @@ footer {
   .menu-grid { grid-template-columns:1fr; }
   .footer-inner { flex-direction:column; text-align:center; }
 }
+
+/* Correction couleur écrans AMOLED Samsung - mobile */
+@media screen and (max-width: 768px) {
+  :root {
+    --dark: #C4601A;
+    --dark2: #A04A14;
+  }
+  .hero-bg, body, section {
+    filter: hue-rotate(10deg) saturate(0.85);
+  }
+}
 </style>
 </head>
 <body>
