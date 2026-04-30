@@ -844,15 +844,17 @@ footer {
   .footer-inner { flex-direction:column; text-align:center; }
 }
 
-/* Correction couleur écrans AMOLED Samsung - mobile */
+/* Correction couleur écrans AMOLED Samsung */
 @media screen and (max-width: 768px) {
   :root {
-    --dark: #C4601A;
-    --dark2: #A04A14;
+    --dark: #D4681A;
+    --dark2: #B85518;
+    --charcoal: #E07830;
   }
-  .hero-bg, body, section {
-    filter: hue-rotate(10deg) saturate(0.85);
-  }
+  body { background-color: #D4681A !important; }
+  section { background-color: #D4681A !important; }
+  .hero-bg { background: linear-gradient(160deg, #D4681A 0%, #B85518 50%, #D4681A 100%) !important; }
+  nav { background: rgba(212,104,26,0.97) !important; }
 }
 </style>
 </head>
