@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="icon" type="image/png" href="/angel_nav.png">
+    <!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-T2TqKtCkS6FBpbiqBQ4Ou.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
 <meta charset="UTF-8">
 <meta name="color-scheme" content="only light">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -825,15 +832,18 @@ footer {
     display:flex;
     flex-direction:column;
     position:fixed;
-    inset:0;
+    top:0; left:0; right:0;
     background:rgba(26,10,8,0.98);
     align-items:center;
     justify-content:center;
-    gap:40px;
-    z-index:400;
+    gap:18px;
+    padding:80px 24px 28px;
+    z-index:1100;
+    border-bottom:1px solid rgba(212,168,67,0.15);
+    box-shadow:0 8px 32px rgba(0,0,0,0.4);
   }
-  .nav-links.open a { font-size:18px; }
-  .hamburger { display:flex; z-index:600; }
+  .nav-links.open a { font-size:15px; }
+  .hamburger { display:flex; z-index:1200; }
 
   section { padding:70px 24px; }
   .about-grid { grid-template-columns:1fr; gap:40px; }
